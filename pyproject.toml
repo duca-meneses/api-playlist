@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "api-playlist"
+version = "0.1.0"
+description = ""
+authors = ["Carlos Eduardo <ducameneses16@gmail.com>"]
+readme = "README.md"
+packages = [{include = "api_playlist"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
