@@ -1,12 +1,12 @@
-from sqlalchemy import Column, Integer, String
- 
-from api_playlist.shared.database import Base
+from sqlalchemy.orm import Mapped, mapped_column
+
+from api_playlist.shared.model import Base
 
 
 class Video(Base):
     __tablename__ = 'videos'
 
-    id = Column(Integer, primary_key=True, autoincrement=True)
-    title = Column(String(50))
-    description = Column(String(255))
-    url = Column(String(255))
+    id: Mapped[int] = mapped_column(primary_key=True)
+    title: Mapped[str]
+    description: Mapped[str]
+    url: Mapped[str]

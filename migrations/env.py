@@ -9,7 +9,7 @@ from alembic import context
 
 from dotenv import load_dotenv
 
-from api_playlist.shared.database import Base
+from api_playlist.shared.model import Base
 from api_playlist.video.models.video_model import Video
 
 
